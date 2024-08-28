@@ -10,7 +10,7 @@ def stock_picker(prices)
       sell_day_absolute = buy_day + 1 + sell_day
 
       if profit > best_profit
-        best_profit = profit 
+        best_profit = profit
         output = [buy_day, sell_day_absolute]
       end
     end
@@ -19,6 +19,4 @@ def stock_picker(prices)
   output
 end
 
-
-
-puts stock_picker([17,3,6,9,15,8,6,1,10])
+puts stock_picker([17, 3, 6, 9, 15, 8, 6, 1, 10])

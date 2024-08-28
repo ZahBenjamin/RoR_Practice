@@ -4,9 +4,7 @@
 def substring(input, dictionary)
   output_hash = []
   dictionary.each do |substring|
-    if input.downcase.include?(substring)
-      output_hash[substring] = input.downcase.scan(substring).count
-    end
+    output_hash[substring] = input.downcase.scan(substring).count if input.downcase.include?(substring)
   end
   output_hash
 end
