@@ -7,3 +7,5 @@ source 'https://rubygems.org'
 gem 'rubocop', '~> 1.65', group: :development
 
 gem "rubocop-performance", "~> 1.21", :require => false
+
+gem "devise", "~> 4.9"
